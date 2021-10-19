@@ -39,7 +39,8 @@ Output:
 */
 
 export function makeMoreScreamingKeys(someObject) {
-    return {};
+    const moreTruck = Object.keys(someObject);
+    return moreTruck;
 }
 
 /*

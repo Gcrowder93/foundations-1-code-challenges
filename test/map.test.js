@@ -16,12 +16,6 @@ const pets = [
     { name: 'fluff', type: 'squirrel' },
 ];
 
-const pets2 = [
-    { name: 'scooter', type: 'puppy' },
-    { name: 'sassy', type: 'puppy' },
-    { name: 'legzo', type: 'frog' },
-    { name: 'fluff', type: 'squirrel' },
-];
 
 
 test('should return all names', (expect) => {

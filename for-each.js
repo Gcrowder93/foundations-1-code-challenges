@@ -17,9 +17,12 @@ Output:
 */
 
 export function makeArrayOfNames(arr) {
-    return [];
+    const newArray = [];
+    arr.forEach(item => {
+        newArray.push(item.name);
+    });
+    return newArray;
 }
-
 /*
 Output:
 
@@ -27,8 +30,12 @@ Output:
 */
 
 export function makeReversedArrayOfTypes(arr) {
-    return [];
+    const typeArray = [];
+    arr.forEach((element) => typeArray.push(element.type));
+    typeArray.reverse();
+    return typeArray;
 }
+
 
 /*
 Output:
@@ -41,7 +48,15 @@ Output:
 ]
 */
 
-export function makeSpanishLanguageArray(arr) {
-    return [];
-}
+// Use the forEach method to solve these problems! All functions should return a NEW array, without mutating the old array.
 
+export function makeSpanishLanguageArray(arr) {
+    const spanishArray = [];
+    arr.forEach((element) =>
+        spanishArray.push({
+            nombre: `${element.name}`,
+            tipo: `${element.type}`,
+        })
+    );
+    return spanishArray;
+}
